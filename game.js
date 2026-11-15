@@ -73,6 +73,7 @@ updateClassStyle();
 // Upload Photo & Map to Character Head
 document.getElementById('faceUpload').addEventListener('change', (e) => {
   const file = e.target.files[0];
+
   if (!file) return;
   const reader = new FileReader();
   reader.onload = (event) => {
